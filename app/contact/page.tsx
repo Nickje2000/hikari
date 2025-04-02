@@ -1,10 +1,11 @@
 import Image from "next/image"
+import React from "react";
 import Link from "next/link"
 import { MapPin, Phone, Mail, Clock, Globe, Flag, AlertCircle } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { 
+import {
   Select,
   SelectContent,
   SelectItem,
@@ -18,10 +19,10 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative h-[40vh] w-full">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 z-10" />
-        <Image 
-          src="/placeholder.svg?height=1080&width=1920" 
-          alt="Hikari Tourism Office" 
-          fill 
+        <Image
+          src="/placeholder.svg?height=1080&width=1920"
+          alt="Hikari Tourism Office"
+          fill
           className="object-cover"
           priority
         />
@@ -39,10 +40,10 @@ export default function ContactPage() {
           <div>
             <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
             <p className="text-gray-700 mb-8">
-              Have questions about visiting Hikari? Our tourism experts are ready to assist you with planning your trip, 
+              Have questions about visiting Hikari? Our tourism experts are ready to assist you with planning your trip,
               providing information, or answering any questions you may have.
             </p>
-            
+
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
@@ -58,14 +59,14 @@ export default function ContactPage() {
                   <Input id="lastName" placeholder="Enter your last name" />
                 </div>
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="email" className="text-sm font-medium">
                   Email Address
                 </label>
                 <Input id="email" type="email" placeholder="Enter your email address" />
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="inquiry" className="text-sm font-medium">
                   Type of Inquiry
@@ -85,20 +86,20 @@ export default function ContactPage() {
                   </SelectContent>
                 </Select>
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium">
                   Message
                 </label>
                 <Textarea id="message" placeholder="Please provide details about your inquiry" rows={5} />
               </div>
-              
+
               <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700">
                 Send Message
               </Button>
             </form>
           </div>
-          
+
           {/* Contact Information */}
           <div>
             <h2 className="text-3xl font-bold mb-6">Tourism Office</h2>
@@ -115,7 +116,7 @@ export default function ContactPage() {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <Phone className="h-5 w-5 text-emerald-600 mr-3 mt-1" />
                   <div>
@@ -123,7 +124,7 @@ export default function ContactPage() {
                     <p className="text-gray-700">+81-123-456-789</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <Mail className="h-5 w-5 text-emerald-600 mr-3 mt-1" />
                   <div>
@@ -131,7 +132,7 @@ export default function ContactPage() {
                     <p className="text-gray-700">info@hikari-tourism.jp</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <Clock className="h-5 w-5 text-emerald-600 mr-3 mt-1" />
                   <div>
@@ -145,11 +146,11 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="relative h-[300px] w-full rounded-lg overflow-hidden mb-6">
-              <Image 
-                src="/placeholder.svg?height=600&width=800" 
-                alt="Map of Hikari Tourism Office location" 
+              <Image
+                src="/placeholder.svg?height=600&width=800"
+                alt="Map of Hikari Tourism Office location"
                 fill
                 className="object-cover"
               />
@@ -159,7 +160,7 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-emerald-50 p-4 rounded-lg">
               <div className="flex items-start">
                 <AlertCircle className="h-5 w-5 text-emerald-600 mr-3 mt-1" />
@@ -170,28 +171,28 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        
+
         {/* Embassy & Consulate Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold mb-6">Embassy & Consulate Services</h2>
           <p className="text-gray-700 mb-8 max-w-3xl">
-            Hikari Island hosts several embassies and consulates to assist international visitors. These diplomatic missions 
+            Hikari Island hosts several embassies and consulates to assist international visitors. These diplomatic missions
             provide various services including visa assistance, passport services, and emergency support for their citizens.
           </p>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             {/* Embassy Building Image */}
             <div className="lg:col-span-1">
               <div className="relative h-full min-h-[400px] w-full rounded-lg overflow-hidden shadow-md">
-                <Image 
-                  src="/placeholder.svg?height=800&width=600" 
-                  alt="Hikari International Embassy Complex" 
+                <Image
+                  src="/placeholder.svg?height=800&width=600"
+                  alt="Hikari International Embassy Complex"
                   fill
                   className="object-cover"
                 />
               </div>
             </div>
-            
+
             {/* Embassy Information */}
             <div className="lg:col-span-2">
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 mb-6">
@@ -200,10 +201,10 @@ export default function ContactPage() {
                   Hikari International Embassy Complex
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  The Hikari International Embassy Complex houses diplomatic missions from several countries in one convenient location. 
+                  The Hikari International Embassy Complex houses diplomatic missions from several countries in one convenient location.
                   The complex is located in the Diplomatic Quarter of Togetsu, just 15 minutes from the city center.
                 </p>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="h-5 w-5 text-emerald-600 mr-3 mt-1" />
@@ -215,7 +216,7 @@ export default function ContactPage() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <Phone className="h-5 w-5 text-emerald-600 mr-3 mt-1" />
                     <div>
@@ -223,7 +224,7 @@ export default function ContactPage() {
                       <p className="text-gray-700">+81-123-555-000</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <Clock className="h-5 w-5 text-emerald-600 mr-3 mt-1" />
                     <div>
@@ -236,7 +237,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
                   <div className="flex items-center mb-3">
@@ -251,7 +252,7 @@ export default function ContactPage() {
                     Email: japan-consulate@hikari.jp
                   </p>
                 </div>
-                
+
                 <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
                   <div className="flex items-center mb-3">
                     <Flag className="h-5 w-5 text-emerald-600 mr-2" />
@@ -265,7 +266,7 @@ export default function ContactPage() {
                     Email: us-embassy@hikari.jp
                   </p>
                 </div>
-                
+
                 <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
                   <div className="flex items-center mb-3">
                     <Flag className="h-5 w-5 text-emerald-600 mr-2" />
@@ -279,7 +280,7 @@ export default function ContactPage() {
                     Email: eu-delegation@hikari.jp
                   </p>
                 </div>
-                
+
                 <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
                   <div className="flex items-center mb-3">
                     <Flag className="h-5 w-5 text-emerald-600 mr-2" />
@@ -296,7 +297,7 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-emerald-50 p-6 rounded-lg">
             <h3 className="text-xl font-bold mb-4">Embassy Services</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -309,7 +310,7 @@ export default function ContactPage() {
                   <li>Birth/marriage registration</li>
                 </ul>
               </div>
-              
+
               <div>
                 <h4 className="font-bold mb-2">Consular Assistance</h4>
                 <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm">
@@ -319,7 +320,7 @@ export default function ContactPage() {
                   <li>Lost property assistance</li>
                 </ul>
               </div>
-              
+
               <div>
                 <h4 className="font-bold mb-2">Visa Services</h4>
                 <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm">
@@ -332,7 +333,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        
+
         {/* Emergency Contact Section */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Emergency Contacts</h2>
@@ -358,7 +359,7 @@ export default function ContactPage() {
                 </li>
               </ul>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <h3 className="text-xl font-bold mb-3">Tourist Police</h3>
               <p className="text-gray-700 mb-3">
@@ -375,7 +376,7 @@ export default function ContactPage() {
                 </li>
               </ul>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <h3 className="text-xl font-bold mb-3">Medical Services</h3>
               <ul className="space-y-2">
@@ -395,21 +396,21 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        
+
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-6">We Look Forward to Welcoming You to Hikari</h2>
           <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
             Our team is dedicated to ensuring you have a memorable and enjoyable experience on our beautiful island.
           </p>
-          <Link 
-            href="/plan" 
+          <Link
+            href="/plan"
             className="bg-emerald-600 text-white px-6 py-3 rounded-md font-medium hover:bg-emerald-700 transition"
           >
             Start Planning Your Visit
           </Link>
         </div>
       </div>
-      
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 mt-auto">
         <div className="container mx-auto px-4">
