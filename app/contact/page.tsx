@@ -1,5 +1,6 @@
-import Image from "next/image"
+"use client";
 import React from "react";
+import Image from "next/image"
 import Link from "next/link"
 import { MapPin, Phone, Mail, Clock, Globe, Flag, AlertCircle } from 'lucide-react'
 import { Button } from "@/components/ui/button"
